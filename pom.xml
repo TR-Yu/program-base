@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>tech.tryu</groupId>
+  <artifactId>java-library-leaning</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>java-library-leaning</name>
+  <url>https://github.com/TR-Yu/java-library-leaning</url>
+  <modules>
+    <module>java-api-demo/java-base-jdk1.8</module>
+  </modules>
+
+  <!-- Jar 包依赖版本号-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-assembly-plugin>3.4.2</maven-assembly-plugin>
+    <junit.version>4.13.2</junit.version>
+    <slf4j.version>2.0.7</slf4j.version>
+    <maven-assembly-plugin>3.4.2</maven-assembly-plugin>
+  </properties>
+
+  <!--依赖管理-->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>${maven-assembly-plugin}</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!--开发人员-->  <developers>
+    <developer>
+      <id>tryu</id>
+      <name>Tryu</name>
+      <email>keepwarms@outlook.com</email>
+      <url>https://blog.tryu.tech/</url>
+    </developer>
+  </developers>
+
+  <!-- 项目许可证信息 -->
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+</project>
