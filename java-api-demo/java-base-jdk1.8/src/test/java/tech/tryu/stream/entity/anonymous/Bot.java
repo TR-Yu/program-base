@@ -1,4 +1,4 @@
-package tech.tryu.stream.anonymous;
+package tech.tryu.stream.entity.anonymous;
 public interface Bot {
 
     String botReturn();

@@ -8,8 +8,8 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import tech.tryu.App;
-import tech.tryu.stream.anonymous.Bot;
-import tech.tryu.stream.anonymous.ChatBot;
+import tech.tryu.stream.entity.anonymous.Bot;
+import tech.tryu.stream.entity.anonymous.ChatBot;
 
 import java.util.concurrent.Callable;
 
